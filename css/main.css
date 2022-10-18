@@ -1,0 +1,58 @@
+:root {
+  --mainDarkMode: #131414;
+  --mainWhiteMode: white;
+}
+
+@font-face {
+  font-family: ff14;
+  src: url(/fonts/finalf.ttf);
+}
+@font-face {
+  font-family: milkyCoffe;
+  src: url(/fonts/Milky\ Coffee.ttf);
+}
+
+
+body {
+  background-color: var(--mainDarkMode);
+}
+#backdrop{
+  position: fixed;
+  z-index: -20;
+  background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/6/64/iN2vxY.jpg);
+  background-size:cover;
+  filter: blur(0px);
+  filter: brightness(30%);
+  width: 100vw;
+  height: 100vh;
+}
+
+#mainContent {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 280px;
+  color: var(--mainWhiteMode);
+}
+
+.addGroupBtn{
+  width: 100%;
+}
+
+.slogen{
+  font-family: ff14;
+  text-align: center;
+  padding-top: 35vh;
+  padding-right: 10vw;
+}
+
+.tutorialHere{
+  width: 220px;
+  height: 20px;
+  color: #ff4d4d;
+
+  font-family: milkyCoffe;
+
+  position:relative;
+  left: 270px;
+  top: -30px;
+}
