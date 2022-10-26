@@ -4,9 +4,7 @@ if (file_exists('vendor/' . 'autoload.php')) {
     require_once 'vendor/' . 'autoload.php';
 }
 
-use Dotenv\Dotenv;
-
-$dotenv = Dotenv::createImmutable('./');
+$dotenv =Dotenv\Dotenv::createImmutable('./');
 $dotenv->safeLoad();
 
 function redirect($url)
@@ -22,7 +20,6 @@ function redirect($url)
 }
 
 include 'php/db.php';
-include 'php/profile.php';
 include 'php/login.php';
 include 'php/apiRequests.php';
 ?>
@@ -35,7 +32,7 @@ include 'php/apiRequests.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MyArk</title>
+    <title>Static Paper</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="css/sidebars.css?<?php echo time(); ?>" rel="stylesheet">
